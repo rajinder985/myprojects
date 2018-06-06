@@ -25,7 +25,7 @@ VS 2015, ASP.net MVC 5
 
 2. After succesfull login, you will see main screen for Salary generator. Fill out all the required data and click on Generate Salary button to see the calculated salary with income tax.
 
-3. You can reset the value and can try with other parameters.
+3. You can reset the value with Reset button and can try with other parameters.
 
 ## Sample input and output 
 
