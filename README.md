@@ -38,5 +38,5 @@ Pay Period     : 06-06-2018
 
 
 ## Output
-Name	          Pay-Period	           Gross-Income	   Income-Tax	   Net-Income	      Super-Amount
+Name	          Pay-Period	           Gross-Income	   Income-Tax	   Net-Income	      Super-Amount                                                                                     
 Rajinder Kumar	6/7/2018 12:00:00 AM	 12083.33 $	      3440.17 $	   8643.17 $      	1450.00 $
