@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<ul class="nav nav-tabs">
+	<li class="active" ><a data-toggle="tab" href="#firstTab">Salary Generator</a></li>
+</ul>*@
+<h2 class="h2only">Salary Generator </h2>
+<div class="tab-content" >
+<div id="firstTab" class="tab-pane fade in active">@Html.Action("GetDetails")</div>
+<br />
+<br />
+<div id="secondTab"></div>
+</div>
+<div>
+<img src="/Content/themes/base/images/ajax_loader_blue_512.gif" id="loaderImage" class="loadingDiv"  style="display:none;">
+</div>	
+
+@section scripts{
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/jqueryui")
+@Styles.Render("~/Content/cssjqryUi")  
+<script type="text/javascript">
+
+     $(document).ready(function () {
+         $('input[type=datetime]').datepicker({
+             dateFormat: "dd/M/yy",
+             changeMonth: true,
+             changeYear: true,
+             yearRange: "-60:+0"
+         });
+
+     });
+</script>  
+}

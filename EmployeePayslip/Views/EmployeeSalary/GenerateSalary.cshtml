@@ -1,0 +1,49 @@
+﻿@model IEnumerable<EmployeePayslip.Models.EmployeeSalaryOutput>
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayPeriod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrossIncome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncomeTax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NetIncome) 
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuperAmount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FullName) 
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayPeriod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrossIncome) $
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncomeTax) $
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NetIncome) $
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuperAmount) $
+        </td>       
+    </tr>
+}
+
+</table>
