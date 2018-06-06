@@ -23,7 +23,7 @@
 						$("#secondTab").html(response);
 						jQuery("#loaderImage").hide();
 						$("#secondTab").show();
-					}, 1000);					
+					}, 350);					
 					
 									
 				},
@@ -38,11 +38,6 @@
 
 $(document).ready(function () {	
 	Reset();
-	$('#loaderImage').bind('ajaxStart', function () {
-		$(this).show();
-	}).bind('ajaxStop', function () {
-		$(this).hide();
-	});
 });
 
 
